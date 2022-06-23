@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 
 export const typeDefs = gql`
   type Query {
@@ -53,5 +53,9 @@ export const typeDefs = gql`
     front_female: String
     front_shiny: String
     front_shiny_female: String
+  }
+
+  type Subscription {
+    numberIncremented: Int
   }
 `;
